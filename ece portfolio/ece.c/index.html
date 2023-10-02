@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECE C</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("./wallpaperflare.com_wallpaper (12).jpg");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #role {
+            padding: 15px;
+            width: 100%;
+            font-size: 30px;
+            border: none;
+            border-radius: 15px;
+            background-color: transparent;
+            color: white;
+            box-shadow: 5px 5px white;
+            cursor: pointer;
+            max-width: 290px; /* Set a maximum width for better alignment on larger screens */
+        }
+
+        #role option {
+            height: 40px;
+            font-size: 30px;
+            background-color: transparent;
+            color: purple;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .krlogo {
+            width: 120px;
+    height: 80px;
+    border-radius: 100px;
+    opacity: 0.2;
+    padding-bottom: 0.5mm;
+    margin-bottom: 10mm;
+        }
+
+        .mklogo {
+            width: 170px;
+            height: 90px;
+            border-radius: 10px;
+            padding: 2mm;
+            opacity: 0.2;
+            position: absolute;
+            top: 8px;
+            right: 60px;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img class="krlogo" src="./kr.png" alt="">
+        <img class="mklogo" src="./mk.png" alt="">
+        <select id="role" name="role" required>
+            <option value="empty">--R--</option>
+            <option value="admin">ADMIN</option>
+            <option value="user">USER</option>
+        </select>
+    </div>
+    <script>
+        function redirectToPage() {
+            var roleSelect = document.getElementById("role");
+            var selectedRole = roleSelect.options[roleSelect.selectedIndex].value;
+            if (selectedRole === "admin") {
+                window.location.href = "Admin_login.html"; 
+            } else if (selectedRole === "user") {
+                window.location.href = "User_page.html"; 
+            }
+        }
+        document.getElementById("role").addEventListener("change", redirectToPage);
+    </script>
+</body>
+</html>

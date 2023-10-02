@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin_page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-size: 16px;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 36px;
+            border: none;
+            border-radius: 5px;
+            background-color: violet;
+            color: white;
+            cursor: pointer;
+            max-width: 100%;
+            border: black;
+        }
+    </style>
+</head>
+<body>
+    <button id="ICT">ICT LAB</button>
+    <button id="TELL">TELL</button>
+    <button id="PROFILE">PROFILE</button>
+    <button id="SKILLRANK">SKILLRANK</button>
+    <button id="WORKPROFILE">W-PROFILE</button>
+    <button id="ALL_PDF">S-PDF</button>
+    <button id="AI">AI</button>
+
+    <script>
+        document.getElementById("ICT").addEventListener("click", function() {
+            window.location.href = "https://tlc.krgi.in/ictlabmkce2021/#/";
+        });
+
+        document.getElementById("TELL").addEventListener("click", function() {
+            window.location.href = "https://tlc.krgi.in/erpacademicmkce2021/#/";
+        });
+
+        document.getElementById("PROFILE").addEventListener("click", function() {
+            
+            window.location.href = "";
+        });
+
+        document.getElementById("SKILLRANK").addEventListener("click", function() {
+            window.location.href = "https://www.skillrack.com/faces/candidate/tutorprogram.xhtml";
+        });
+
+        document.getElementById("WORKPROFILE").addEventListener("click", function() {
+            
+            window.location.href = "https://docs.google.com/spreadsheets/d/1l0x_oBqPHuurNx_baqCxgnllfNVY-lz8XM2Styecnjk/edit?usp=sharing";
+        });
+
+        document.getElementById("ALL_PDF").addEventListener("click", function() {
+                        window.location.href = "";
+        });
+
+        document.getElementById("AI").addEventListener("click", function() {
+            window.location.href = "https://app.copy.ai/projects/31629483?tool=chat&tab=results&sidebar=tools";
+        });
+    </script>
+</body>
+</html>

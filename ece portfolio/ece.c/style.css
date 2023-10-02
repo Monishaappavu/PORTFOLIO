@@ -1,0 +1,79 @@
+* {
+    background-image: url(./wallpaperflare.com_wallpaper\ \(12\).jpg);
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#role {
+    padding: 10mm;
+    margin-left: 42%;
+    margin-top: 20%;
+    margin-right: 40%;
+    height: 150px;
+    width: 250px;
+    font-size: 50px;
+    border: none;
+    border-radius: 15px;
+    background-color: transparent;
+    color: black;
+    box-shadow: 10px;
+    cursor: pointer;
+}
+
+#role option {
+    height: 70px;
+    font-size: 50px;
+    background-color: transparent;
+    color: black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.krlogo {
+    margin-left: -4%;
+    padding: 1mm;
+    background-position: none;
+    border-radius: 100px;
+    opacity: 0.2;
+}
+
+.mklogo {
+    border-radius: 10px;
+    padding: 1.5mm;
+    opacity: 0.2;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    font-size: 18px;
+}
+
+button {
+   
+    border: black;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 300px;
+    height: 200px;
+    color: white;
+    font-weight: 200;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+#AI {
+    width: 60px;
+    height: 50px;
+   margin-left: 25px;
+    background-color: white;
+    color: white;
+    font-size: 20px;
+    border: white;
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    right: 20px;
+}
